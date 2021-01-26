@@ -9,24 +9,64 @@
     
 </head>
 <body>
-    <h1>Summary: Latitude vs. X</h1>
-    <div class container>
-        <p><img src="Resources/assets/Fig1.png" alt="Temperature Map"></p>
-        <p>
-            The purpose of this dataset is to compare the temperature, humidity, cloudiness, and wind speed against the latitude of the city involved. With the latitude, we can see how the data changes as we move closer and farther away from the equator. 
-        </p>
-        <p>
-            The dataset used was a randomized list of over 500 cities with the weather information being pulled from the OpenWeatherMap API. Matplotlib was used to anazlye the date into graphs. All of the data can be viewed on the data page. Please view the comparison page and each visualization page for more information on each weather factor recorded. 
-        </p>
-    </div>
-    <div>
-        <h1>Visualizations</h1>
-        <img src="../Resources/assets/Fig1.png" alt="Temperature Map">
-        <img src="../Resources/assets/Fig2.png" alt="Humidity Map">
-        <img src="../Resources/assets/Fig3.png" alt="Cloudiness Map">
-        <img src="../Resources/assets/Fig4.png" alt="Wind SPeed Map">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="vis1_temp.html">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="vis2_humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="vis3_cloudiness.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="vis4_wind.html">Wind Speed</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+    
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <h1>Comparison Latitude vs. X</h1>
+    <div class= "container">
+        <div class="row">
+            <div class = "col-md-6">
+                <h2>vs. Max Temperature</h2>
+                <img width="300"src="../Resources/assets/Fig1.png" href="vis1_temp.html" alt="Temperature Plot">
+            </div>
+            <div class = "col-md-6">
+                <h2>vs. Humidity</h2>
+                <img width="300"src="../Resources/assets/Fig2.png" href="vis2_humidity.html" alt="Humidity Plot">
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-6">
+                <h2>vs. Cloudiness</h2>
+                <img width="300"src="../Resources/assets/Fig3.png" href="vis3_cloudiness.html" alt="Cloudiness Plot">
+            </div>
+            <div class = "col-md-6">
+                <h2>vs. Wind Speed</h2>
+                <img width="300"src="../Resources/assets/Fig4.png" href="vis4_wind.html" alt="Wind Speed Plot">
+            </div>
+        </div>
     </div>
     
+<!-- script is for drop down to work -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
